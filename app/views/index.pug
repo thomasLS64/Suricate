@@ -1,0 +1,24 @@
+html
+  head
+    meta(charset='utf8')
+    meta(name='viewport', content='width=device-width, minimum-scale=1, initial-scale=1')
+    title Suricate
+    link(rel='stylesheet', href='/css/app.css')
+  body
+    h1 Suricate
+    p#date
+    ul#servers
+      each server in servers
+        li
+          div(class=(server.header.statusCode == 200 ? 'valid' : 'error'))
+            span.url #{server.header.host}
+            span.status #{server.header.statusCode}
+
+            pre.header #{JSON.stringify(server.header, undefined, 4)}
+
+            if server.header.statusCode == 200 || server.header.statusCode == 404
+              code #{server.body}
+
+
+    script(src='/socket.io/socket.io.js')
+    script(src='/js/app.js')

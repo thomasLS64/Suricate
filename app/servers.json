@@ -1,0 +1,4 @@
+{
+  "HTTPS":  ["plateforme.observia.fr", "recette-plateforme.observia.fr", "formation-plateforme.observia.fr", "ecrf.observia.fr", "recette-ecrf.observia.fr", "formation-ecrf.observia.fr", "recette-elearning.observia.fr"],
+  "HTTP":   ["37.235.95.147"]
+}

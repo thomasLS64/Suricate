@@ -1,0 +1,13 @@
+{
+  "name": "suricate",
+  "version": "0.5.0",
+  "description": "Suricate is a tool to verify the accessibility of a list of servers",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "dependencies": {
+    "socket.io": "2.0.3",
+    "express": "4.15.3",
+    "pug": "2.0.0-rc.2"
+  }
+}
